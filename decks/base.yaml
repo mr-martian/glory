@@ -1,0 +1,46 @@
+metadata:
+  name: base
+  expansion: false
+locations:
+  Wildfell Castle:
+    cards:
+      -
+        intro: You try to climb the castle wall.
+        choices:
+          -
+            text: just climbing
+            glory: 3
+          -
+            text: try to do a flip
+            roll:
+              odd:
+                text: you look really cool
+                glory: 5
+              even:
+                text: you break your neck
+                death: true
+                skip: 2
+      -
+        intro: You gaze upon the Darksummit Sea.
+        choices:
+          -
+            text: you fall in love with a mermaid
+            go: Darksummit Sea
+          -
+            text: something else happens
+            glory: -1
+  Darksummit Sea:
+    cards:
+      -
+        intro: You go to the tavern.
+        choices:
+          -
+            text: You argue with Slimy Jim about your fashion choices.
+            battle:
+              win:
+                glory: 3
+              lose:
+                glory: -2
+          -
+            text: You start a book club.
+            glory: 2

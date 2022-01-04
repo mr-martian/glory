@@ -1,0 +1,11 @@
+.action-text {
+    display: block;
+}
+
+.card-choice:hover {
+    background: #DDDDDD;
+}
+
+.player.active {
+    background: gold;
+}
